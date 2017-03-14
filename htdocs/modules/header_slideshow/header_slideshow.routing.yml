@@ -1,0 +1,6 @@
+header_slideshow.start:
+    path: /custom/start
+    defaults:
+        _controller: '\Drupal\header_slideshow\Controller\Header_slideshowStartController::content'
+    requirements:
+        _permission: 'access content'
