@@ -1,0 +1,12 @@
+name: NESTLE_GENERAL_WEB_PARTS
+description: NESTLE GENERAL WEB PARTS (Blocks)
+core: '8.x'
+type: module
+
+dependencies:
+  - block
+  - node
+
+version: '8.x-1.0'
+project: 'NESTLE_GENERAL_WEB_PARTS'
+package: 'NESTLE PROJECTS'

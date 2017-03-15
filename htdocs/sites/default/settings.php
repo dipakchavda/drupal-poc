@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'ZEeKxyZ9_kH8qwyQ795A4Y9GuOvl6r6NrWHcxhMuvvrotpJZiACdA4mvp4IDMunl92rGih8r7A';
+$settings['hash_salt'] = 'dkDKXSPb4oq1EdU3qrmxpXZeQIUXn_qoUhdrtbIFyebnJOhrpZVWXKw1OpvdEpBAemsnkwoU1Q';
 
 /**
  * Deployment identifier.
@@ -750,18 +750,19 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
-  'database' => 'drupalcore',
-  'username' => 'root',
-  'password' => '',
+  'database' => 'demodev1',
+  'username' => 'demodev1',
+  'password' => 'demodev1',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '10.212.225.36',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_hTIG8FzW_TfETYHKzUcSh4o_AiX73dg6YLvqPaS1mBjkTRgi67VwTpwDkgkXVuDg_JXs6z81MQ/sync';
+$config_directories['sync'] = 'sites/default/files/config_3mElKuyTZd8fP1GY6Z26082K9Tn7wxMC6tHEevcx3zMFuXmfO4ThDAY0hFzHB_UEvsEQyyFcxg/sync';
+ini_set('session.cookie_domain', 'www.demodev1.local');

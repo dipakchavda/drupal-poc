@@ -1,6 +1,0 @@
-name: header_slideshow
-dependencies: {  }
-description: 'This module is use for display header image on page'
-core: 8.x
-package: Custom
-type: module
