@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the nestle theme.
+
+nestle.settings:
+  type: theme_settings
+  label: 'nestle settings'
