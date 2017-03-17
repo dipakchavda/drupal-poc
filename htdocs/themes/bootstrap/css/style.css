@@ -1,0 +1,145 @@
+body {
+	
+}
+
+.view-country-header-block h2 {
+    position: relative;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    color: #060e33;
+    font-size: 80px;
+}
+
+.view-country-header-block h3 {
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.view-country-header-block p {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.3;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.view-list-of-city-by-country h2.city-title {
+    position: relative;
+    font-family: "Oswald",sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.view-list-of-city-by-country h2.city-title a {
+color:#060e33;	
+}
+
+.view-list-of-city-by-country .views-field-description__value p{
+	    margin-bottom: 2em;
+    line-height: 1.5;
+	    text-align: center;
+}
+
+.block-views.block-views-blockcountry-boxes-other-than-current-block-1 h2.block-title {
+
+    position: relative;
+    font-size: 48px;
+    text-transform: uppercase;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.block-views.block-views-blockcountry-boxes-other-than-current-block-1 h4 {
+	
+	    position: relative;
+    font-family: "Oswald",sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.block-views.block-views-blockcountry-boxes-other-than-current-block-1 h4 a{
+color:#060e33;	
+}
+
+.view-city-guide-articles-3-column-country-page h5 {
+ position: relative;
+    font-family: "Oswald",sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.view-city-guide-articles-3-column-country-page h5 a {
+color:#060e33;	
+}
+
+.view-list-of-city-by-country::after{
+	content: '';
+    display: block;
+    margin: 14px auto 0 auto;
+    background-repeat: no-repeat;
+    width: 97%;
+    height: 15px;
+    border-bottom: 5px solid gray;
+	
+}
+
+.view-list-of-city-by-country::before{
+	content: '';
+    display: block;
+    margin: 14px auto 40px;
+    background-repeat: no-repeat;
+    width: 97%;
+    height: 15px;
+    border-bottom: 5px solid gray;
+	
+}
+
+.view-city-guide-articles-3-column-country-page::before{
+	content: '';
+    display: block;
+    margin: 14px auto 40px;
+    background-repeat: no-repeat;
+    width: 97%;
+    height: 15px;
+    border-bottom: 5px solid gray;
+}
+
+.list-style {
+	list-style: none;
+}
+
+.list-style li {
+	margin-bottom: 30px;
+}
+
+.warning {
+	position: relative;
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Oswald",sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+	
+}
+
+.button {
+	display: inline-block;
+    padding: 0.75em 5em;
+    border: 1px solid;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.25s ease;
+	
+}
