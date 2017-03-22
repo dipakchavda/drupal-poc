@@ -388,9 +388,10 @@ color:#060e33;
     opacity: 0;
 }  */
 
-@media (max-width:499px){
-.region-socialshare {
-	display: none;
-}
+@media (max-width:767px){
+	
+	.region-socialshare {
+		display: none;
+	}
 
 	}
