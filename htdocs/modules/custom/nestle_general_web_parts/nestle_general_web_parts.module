@@ -1,0 +1,18 @@
+<?php
+
+function nestle_general_web_parts_theme($existing, $type, $theme, $path) {
+  return array(
+    'hello_block' => array(
+      
+	  #'render element' => 'elements',
+      #'base hook' => 'block',
+	  
+      'template' => 'hello-block',
+	  'variables' => array(
+						'content' => NULL,
+						'mydata' => NULL,
+						'description' => t('This is dummy block content from my block Test.')
+					),
+    )
+  );
+}
