@@ -766,3 +766,5 @@ $databases['default']['default'] = array (
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_3mElKuyTZd8fP1GY6Z26082K9Tn7wxMC6tHEevcx3zMFuXmfO4ThDAY0hFzHB_UEvsEQyyFcxg/sync';
 ini_set('session.cookie_domain', 'www.demodev1.local');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);

@@ -1,27 +1,30 @@
 <?php
 
+/**
+ * @file
+ */
 namespace Drupal\NestleGeneralWebParts\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'Nestle: General web parts Block.
+ * Provides a 'Hello' Block.
  *
  * @Block(
- *   id = "example_empty",
- *   admin_label = @Translation("Example: empty block")
+ *   id = "hello_block",
+ *   admin_label = @Translation("Hello block"),
+ *   category = @Translation("Nestle"),
  * )
  */
-class ExampleEmptyBlock extends BlockBase {
+class ProductCanvasHeaderImageBlock extends BlockBase {
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    // We return an empty array on purpose. The block will thus not be rendered
-    // on the site. See BlockExampleTest::testBlockExampleBasic().
     return array(
-      '#markup' => $this->t('This is example block')
+		'#type' => 'markup',
+		'#markup' => $this->t('Hello, World!'),
     );
   }
 
