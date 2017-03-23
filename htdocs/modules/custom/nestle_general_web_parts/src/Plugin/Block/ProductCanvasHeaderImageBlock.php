@@ -3,7 +3,7 @@
 /**
  * @file
  */
-namespace Drupal\NestleGeneralWebParts\Plugin\Block;
+namespace Drupal\nestle_general_web_parts\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
