@@ -180,11 +180,22 @@ color:#060e33;
     text-decoration: none;
     color: #000;
     transition: all 0.25s ease;
-	background: gray;
+	
 }
 .view-city-guide-articles-pagination span.view-more a {
 	color: #000000;
 }
+.view-city-guide-articles-pagination span.view-more a:hover{
+	text-decoration: none;
+}
+
+.view-city-guide-articles-pagination span.view-more:hover {
+color: #fff;
+    border-color: #f92f3b;
+    background: #f92f3b;	
+	
+}
+
 .country-name {
 	 position: relative;
     font-family: "Oswald",sans-serif;
@@ -366,7 +377,7 @@ color:#060e33;
 	
 }
 
- /* .header-menu-btn #nav-icon3.open span:nth-child(1) {
+ .header-menu-btn #nav-icon3.open span:nth-child(1) {
     top: 18px;
     width: 0;
     left: 50%;
@@ -386,7 +397,7 @@ color:#060e33;
     width: 0;
     left: 50%;
     opacity: 0;
-}  */
+}  
 
 @media (max-width:767px){
 	

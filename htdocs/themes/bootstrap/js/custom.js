@@ -13,18 +13,18 @@ jQuery('.region-socialshare ul li').eq(3).addClass("youtube");
 
 
 // Top navigation effect
-	jQuery("#main-menu-desktop").hide().animate({left: '-1000px'});
+	jQuery("#main-menu-desktop").hide().animate({left: '-1000px'},10);
 	jQuery("#main-menu-desktop").removeClass('open');
 	jQuery("#nav-icon3").removeClass('open');
     jQuery('#nav-icon3').click(function () {
 		if (jQuery("#main-menu-desktop").is(":visible") == true) {
 			jQuery("#main-menu-desktop").removeClass('open');
 			jQuery("#nav-icon3").removeClass('open');
-			jQuery("#main-menu-desktop").hide().animate({left: '-1000px'},"slow");
+			jQuery("#main-menu-desktop").hide().animate({left: '-1000px'},10);
 			
 		}
 		else {
-			jQuery("#main-menu-desktop").show().animate({left: '0px'},"slow");
+			jQuery("#main-menu-desktop").show().animate({left: '0px'}, 10);
 			jQuery("#main-menu-desktop").addClass('open');
 			jQuery("#nav-icon3").addClass('open');
 		}
