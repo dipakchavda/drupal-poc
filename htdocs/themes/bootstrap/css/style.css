@@ -399,6 +399,78 @@ color: #fff;
     opacity: 0;
 }  
 
+.product-wrapper {
+	width: 980px;
+    margin: 0 auto;
+}
+
+.container-wrapper {
+	text-align:center;
+}
+
+.nav.nav-tabs li {
+ box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    display: table-cell;
+    font-family: "Oswald",sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 0.3em 1.2em;
+    border: 1px solid #b5e3f4;
+    
+    transition: background-color 0.25s ease;
+	
+}
+   .nav.nav-tabs li a {
+	   width: 156px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	padding: 0px 15px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border:none;
+    text-align:center;	   
+   }
+   
+   .nav.nav-tabs {
+	display: table;
+    margin-right: auto;
+    margin-left: auto;
+	   
+   }
+   
+   .container-wrapper h4 {
+	   display: inline-block;
+    position: relative;
+    font-size: 48px;
+    text-transform: uppercase;
+    width: 100%;
+	   
+   }
+.container-wrapper h4::after {
+	content: '';
+    display: block;
+    margin: 14px auto 0 auto;
+    background-image: url(../images/section_title_mustache.png);
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 15px;
+
+	
+}
+
+.nav.nav-tabs li a:hover {
+	color: #555;
+    cursor:pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+	
+}
+
+
 @media (max-width:767px){
 	
 	.region-socialshare {
