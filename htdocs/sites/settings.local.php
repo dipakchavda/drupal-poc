@@ -105,3 +105,7 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
+$cache_bins = array('bootstrap','config','data','default','discovery','dynamic_page_cache','entity','menu','migrate','render','rest','static','toolbar');
+foreach ($cache_bins as $bin) {
+  $settings['cache']['bins'][$bin] = 'cache.backend.null';
+}
