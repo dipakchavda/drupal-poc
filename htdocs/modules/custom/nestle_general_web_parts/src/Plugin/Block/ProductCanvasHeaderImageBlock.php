@@ -36,12 +36,13 @@ class ProductCanvasHeaderImageBlock extends BlockBase {
   
   private function getProducts() {
 		$result = array();
-		$city_data = \Drupal::request()->attributes->all()['taxonomy_term']->toArray();
-		$city_id = \Drupal::request()->attributes->all()['taxonomy_term']->id();
-		$country_id = !empty($city_data['field_img_city']) ? $city_data['field_img_city'][0]['target_id'] : 0;
+		#$city_data = \Drupal::request()->attributes->all()['taxonomy_term']->toArray();
+		#print "<pre>";print_r($city_data); die;
 		
-		$query = \Drupal::entityQuery('node')->condition('type', 'products_page')->range(0,3)->execute();
+		#$city_id = \Drupal::request()->attributes->all()['taxonomy_term']->id();
+		#$country_id = !empty($city_data['field_img_city']) ? $city_data['field_img_city'][0]['target_id'] : 0;
 		
+		$query = \Drupal::entityQuery('node')->condition('type', 'products_page')->range(0,4)->execute();
 		
 		if ($query) {
 			foreach($query as $nid) {
@@ -51,10 +52,8 @@ class ProductCanvasHeaderImageBlock extends BlockBase {
 				#$result[]['nid'] = $node->Id();
 				$result[]['title'] = $node->getTitle();
 				$result[]['image_data'] = $node->get('field_product_image')->getValue();
-					
 					#$file = $node->get('field_product_image')->getValue();
 					#$file = \Drupal\file\Entity\File::load($file);
-
 				#print "<pre>";print_r($file); die;
 			}
 		}
