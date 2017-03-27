@@ -30,9 +30,7 @@ class HomePageCountryListBlock extends BlockBase {
     return array(
 		'#type' => 'markup',
 		'#theme' => 'country_list_block',
-		
 		'#content' => $this->getContent(),
-		
 		'#cache' => array('max-age' => 0)
     );
   }
@@ -49,9 +47,6 @@ class HomePageCountryListBlock extends BlockBase {
 	$query = \Drupal::entityQuery('taxonomy_term')->condition('vid', 'country')->execute();
 	
 	if ($query) {
-		
-		// This is load multiple terms from 'Country' Vocabulary.
-		#$terms = \Drupal\taxonomy\Entity\Term::loadMultiple($tids);
 		
 		foreach($query as $key=>$tid) {
 			
