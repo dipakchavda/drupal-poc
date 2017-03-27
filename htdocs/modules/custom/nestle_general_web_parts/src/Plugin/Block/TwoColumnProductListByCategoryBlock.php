@@ -43,7 +43,7 @@ class TwoColumnProductListByCategoryBlock extends BlockBase {
 	$language_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
 	// Language Name
 	$language_name =  \Drupal::languageManager()->getCurrentLanguage()->getName();
-	$query = \Drupal::entityQuery('node')->condition('type', 'products_page')->condition('status' => 1)->range(0,3)->execute();
+	$query = \Drupal::entityQuery('node')->condition('type', 'products_page')->condition('status', 1)->range(0,3)->execute();
 	
 	if ($query) {
 		foreach($query as $key=>$nid) {

@@ -48,7 +48,9 @@ p {
     margin: 30px auto;
 }
 
-.view-list-of-city-by-country h2.city-title {
+h2.city-title,
+.view-list-of-city-by-country h2.city-title
+{
     position: relative;
     font-family: "Oswald",sans-serif;
     font-size: 24px;
@@ -56,9 +58,14 @@ p {
     text-align: center;
 }
 
+a h2.city-title,
+.view-list-of-city-by-country h2.city-title a
+{
+	color:#060e33;
+}
 
-.view-list-of-city-by-country h2.city-title a {
-color:#060e33;	
+img.responsive-image {
+	width: 100%;
 }
 
 .view-list-of-city-by-country .views-field-description__value p{
@@ -67,8 +74,10 @@ color:#060e33;
 	    text-align: center;
 }
 
-.block-views.block-views-blockcountry-boxes-other-than-current-block-1 h2.block-title {
-font-family: "Playfair Display",serif;
+#block-homepagecountrylistblock h2.country-block-title,
+.block-views.block-views-blockcountry-boxes-other-than-current-block-1 h2.block-title
+{
+	font-family: "Playfair Display",serif;
     position: relative;
     font-size: 48px;
     text-transform: uppercase;
@@ -89,6 +98,7 @@ font-family: "Playfair Display",serif;
 color:#060e33;	
 }
 
+.three_col_products_block h5,
 .view-city-guide-articles-3-column-country-page h5 {
  position: relative;
     font-family: "Oswald",sans-serif;
@@ -97,6 +107,8 @@ color:#060e33;
     text-align: center;
 }
 
+
+.three_col_products_block a h5,
 .view-city-guide-articles-3-column-country-page h5 a {
 color:#060e33;	
 }
@@ -320,7 +332,7 @@ color: #fff;
 }
 
 .youtube a {
-	background-image: url(../images/YouTube.png);
+	background-image: url(../images/youtube.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
     margin: 10px 0 0;
@@ -470,7 +482,47 @@ color: #fff;
 	
 }
 
-
+.country_hub_banner h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 80px;
+	font-family: Playfair Display;
+	font-weight: 400;
+	line-height: 68px;
+	background: -owg-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+	-pie-background: -pie-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+	margin: 0px;
+}
+.city_header .top_description p {
+    color: #060E33;
+    font-size: 21px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.city_header h1 {
+    color: #060E33;
+    font-size: 120px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.city_header .top_description h2 {
+    width: 50%;
+    margin: 0 auto;
+	text-align: center;
+}
 @media (max-width:767px){
 	
 	.region-socialshare {

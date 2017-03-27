@@ -110,13 +110,7 @@
   {% endblock %}
 {% endif %}
 
-{# Country/City Page Header #}
 
-	{% if page.nestle_page_header %}
-		{{ page.nestle_page_header }}
-	{% endif %}
-
-{# Country/City Page Header #}
 
 
 <!--div class="main-content jumbotron">
@@ -136,6 +130,11 @@
 {# Main #}
 {% block main %}
   <div role="main" id="content" class="main-container {{ container }} js-quickedit-main-content">
+	  
+	{% if nestle_page_header %}
+		{{ nestle_page_header }}
+	{% endif %}
+	  
 	  
     <div class="row">
 

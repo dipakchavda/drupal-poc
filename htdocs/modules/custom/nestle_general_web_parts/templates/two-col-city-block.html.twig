@@ -1,18 +1,19 @@
-<h2 class="country-block-title">{{ content.title }}</h2>
-
 <div class="row">
 	{% for nid, row in content %}
-		<div class="col-md-3 col-sm-3 col-xs-12">
+		<div class="col-md-6 col-sm-6 col-xs-12">
 			
 			<div>
 				<a href="{{ row.content_url }}">
-					<img class="responsive-image" src="{{ row.image_data[0].uri }}" alt="{{ row.image_data[0].alt }}" />
+					<img class="responsive-image city-image" src="{{ row.image_data[0].uri }}" alt="{{ row.image_data[0].alt }}" />
 				</a>
 			</div>
 			<div>
 				<a href="{{ row.content_url }}">
 					<h2 class="city-title">{{ row.title|trim }}</h2>
 				</a>
+			</div>
+			<div>
+				<p>{{ row.description|slice(0, 255)|raw }}</p>
 			</div>
 
 		</div>

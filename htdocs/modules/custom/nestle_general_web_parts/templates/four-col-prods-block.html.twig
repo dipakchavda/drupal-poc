@@ -1,6 +1,6 @@
 <div class="row">
 	{% for nid, row in content %}
-		<div class="col-md-3 col-xl-3 col-md-3">
+		<div class="col-md-3 col-sm-3 col-xs-12">
 			<a href="{{ row.content_url }}">
 				<img class="responsive-image" src="{{ row.image_data[0].uri }}" alt="{{ row.image_data[0].alt }}" />
 				<h2>{{ row.title }}</h2>

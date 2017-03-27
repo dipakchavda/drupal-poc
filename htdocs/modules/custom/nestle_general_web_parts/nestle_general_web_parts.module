@@ -13,6 +13,34 @@ function nestle_general_web_parts_theme($existing, $type, $theme, $path) {
 						'mydata' => NULL,
 						'description' => t('This is dummy block content from my block Test.')
 					),
-    )
+    ),
+	'country_header_block' => array(
+      'template' => 'country-header-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'city_header_block' => array(
+      'template' => 'city-header-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'country_list_block' => array(
+      'template' => 'country-list-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'two_col_city_block' => array(
+      'template' => 'two-col-city-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'two_col_prods_block' => array(
+      'template' => 'two-col-prods-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'three_col_prods_block' => array(
+      'template' => 'three-col-prods-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
+	'four_col_prods_block' => array(
+      'template' => 'four-col-prods-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
   );
 }

@@ -27,6 +27,7 @@ class HomePageCountryListBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+	  
     return array(
 		'#type' => 'markup',
 		'#theme' => 'country_list_block',
@@ -34,43 +35,62 @@ class HomePageCountryListBlock extends BlockBase {
 		'#cache' => array('max-age' => 0)
     );
   }
-  
+
   private function getContent() {
 
 	$result = array();
-
+	
 	// Language ID
 	$language_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
 	// Language Name
 	$language_name =  \Drupal::languageManager()->getCurrentLanguage()->getName();
 	
-	$query = \Drupal::entityQuery('taxonomy_term')->condition('vid', 'country')->execute();
+	$query = \Drupal::entityQuery('taxonomy_term');
+	$query->condition('vid', "country");	// Load Country from Taxonomy
+	$query->sort('name', 'ASC');
+    $tids = $query->execute();
 	
-	if ($query) {
-		
-		foreach($query as $key=>$tid) {
-			
-			// Load single Term from 'Country' Taxonomy vocabulary
-			$country_term = \Drupal\taxonomy\Entity\Term::load($tid);
-			
-			#$country_name = $country_term->getText();
-			#$country_link = $country_term->getUri();
-			
-			#$node = Node::load($nid);
-			#$node = Node::load($nid)->toArray();
-			#$file = $node->get('field_product_image')->getValue();
-			#$path_alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $node->Id(), $language_code);			
-			
-			#$result[$key]['nid'] = $node->Id();
-			#$result[$key]['title'] = $node->getTitle();
-			#$result[$key]['image_data'] = $node->get('field_product_image')->getValue();
-			#$result[$key]['image_data'][0]['uri'] = ImageStyle::load('countrybox_220')->buildUrl(File::load($file[0]['target_id'])->getFileUri());
-			#$result[$key]['content_url'] = $path_alias;
-			
+	$country_terms = \Drupal\taxonomy\Entity\Term::loadMultiple($tids);
+	$current_path = \Drupal::service('path.current')->getPath();
+	$path_args 	  = explode('/', $current_path);
+	$CURRENT_COUNTRY = isset($path_args[3]) ? $path_args[3] : 0;
+	$count = 0;
+	
+	// Home page, All the country will be listed.
+	if ($is_front = \Drupal::service('path.matcher')->isFrontPage()) {
+		if ($country_terms) {
+			foreach($country_terms as $key=>$country_term) {
+				$arr_country_term = $country_term->toArray();
+				$result[$key]['tid'] = $country_term->Id(); // City Term ID
+				$result[$key]['content_url'] = $country_term->toUrl();	// City URL
+				$result[$key]['image_data'] = $arr_country_term['field_img_country'];	// Image Object
+				$result[$key]['image_data'][0]['uri'] = ImageStyle::load('countrybox_220')->buildUrl(File::load($arr_country_term['field_img_country'][0]['target_id'])->getFileUri());	// Image URL
+				$result[$key]['title'] = $country_term->toLink()->getText();	// City Name
+				$result[$key]['description'] = $country_term->getDescription();	// City Name
+			}
 		}
 	}
+
+	// This is Only visible on each Country Page
+	// Only 4 country will be visible
+	// Current Country will not be visible in list of country
+	else {
+		foreach($country_terms as $key=>$country_term) {
+			if ($count < 4 && $CURRENT_COUNTRY !== $country_term->Id()) {
+				$arr_country_term = $country_term->toArray();
+				$result[$key]['tid'] = $country_term->Id(); // City Term ID
+				$result[$key]['content_url'] = $country_term->toUrl();	// City URL
+				$result[$key]['image_data'] = $arr_country_term['field_img_country'];	// Image Object
+				$result[$key]['image_data'][0]['uri'] = ImageStyle::load('countrybox_220')->buildUrl(File::load($arr_country_term['field_img_country'][0]['target_id'])->getFileUri());	// Image URL
+				$result[$key]['title'] = $country_term->toLink()->getText();	// City Name
+				$result[$key]['description'] = $country_term->getDescription();	// City Name
+				$count++;
+			}
+		}
+	}
+
+	$result['title'] = $this->getConfiguration()['label'];
 	
-	#print "<pre>";print_r($result); die;
 	return $result;
   }
 

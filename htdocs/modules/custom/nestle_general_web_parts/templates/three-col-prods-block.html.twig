@@ -1,10 +1,18 @@
-<div class="row">
-	{% for nid, row in content %}
-		<div class="col-md-3 col-xl-3 col-md-3">
-			<a href="{{ row.content_url }}">
-				<img class="responsive-image" src="{{ row.image_data[0].uri }}" alt="{{ row.image_data[0].alt }}" />
-				<h2>{{ row.title }}</h2>
-			</a>
-		</div>
-	{% endfor %}
+<div class="three_col_products_block">
+	<div class="row">
+		{% for nid, row in content %}
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div>
+					<a href="{{ row.content_url }}">
+						<img class="img-responsive" src="{{ row.image_data[0].uri }}" alt="{{ row.image_data[0].alt }}" />
+					</a>
+				</div>
+				<div>
+					<a href="{{ row.content_url }}">
+						<h5 class="product-title">{{ row.title }}</h5>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
 </div>

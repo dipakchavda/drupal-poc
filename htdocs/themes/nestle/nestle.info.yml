@@ -9,7 +9,8 @@ package: 'Bootstrap'
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Top Bar'
+  header: 'Header'
+  nestle_page_header: 'Nestle Page Header'
   jumbotron_section: 'Jumbotron'
   userAccount: 'UserAccount'
   Socialshare: 'Socialshare'
@@ -23,6 +24,4 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-#  - 'bootstrap/theme'
   - 'nestle/global-styling'
-#  - 'nestle/bootstrap-scripts'
