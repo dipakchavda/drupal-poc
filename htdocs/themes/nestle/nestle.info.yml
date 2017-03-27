@@ -22,6 +22,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  page_footer: 'Page Global Footer'
 
 libraries:
   - 'nestle/global-styling'

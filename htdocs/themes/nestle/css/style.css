@@ -482,7 +482,9 @@ color: #fff;
 	
 }
 
-.country_hub_banner h3 {
+.country_hub_banner h3,
+.city_hub_banner h3 
+{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -498,7 +500,9 @@ color: #fff;
 	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
 	margin: 0px;
 }
-.city_header .top_description p {
+.country_header .top_description p,
+.city_header .top_description p 
+{
     color: #060E33;
     font-size: 21px;
     font-family: Playfair Display;
@@ -508,7 +512,9 @@ color: #fff;
     width: 50%;
     margin: 0 auto;
 }
-.city_header h1 {
+.country_header h1,
+.city_header h1 
+{
     color: #060E33;
     font-size: 120px;
     font-family: Playfair Display;
@@ -518,7 +524,9 @@ color: #fff;
     text-transform: uppercase;
     margin-top: 60px;
 }
-.city_header .top_description h2 {
+.country_header .top_description h2,
+.city_header .top_description h2 
+{
     width: 50%;
     margin: 0 auto;
 	text-align: center;

@@ -1,11 +1,10 @@
 <div class="city_header">
-	<div class="country_hub_banner">
-		<img class="img-responsive" src="{{ content['image_url'] }}" />
+	<div class="city_hub_banner">
+		<img class="img-responsive" src="{{ content['image_url'] }}" alt="" alt="{{ content.image_data['0']['alt'] }}" />
 		<h3>{{ content['title']|raw }}</h3>
 	</div>
 	<div class="top_description">
-		<h1>{{ content['country_title']|raw|upper }}</h1>
-		<h2>{{ content['country_subtitle']|raw }}</h2>
-		<p>{{ content['country_text']|raw }}</p>
+		<h1>{{ content['city_title']|raw|upper }}</h1>
+		<p>{{ content['city_text']|raw }}</p>
 	</div>
 </div>

@@ -14,6 +14,10 @@ function nestle_general_web_parts_theme($existing, $type, $theme, $path) {
 						'description' => t('This is dummy block content from my block Test.')
 					),
     ),
+	'page_footer_block' => array(
+      'template' => 'page-footer-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
 	'country_header_block' => array(
       'template' => 'country-header-block',
 	  'variables' => array( 'content' => NULL ),
