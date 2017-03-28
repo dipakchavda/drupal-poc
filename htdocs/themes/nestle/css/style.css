@@ -314,28 +314,28 @@ color: #fff;
 	background-image: url(../images/facebook.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
 }
 
 .instagram a {
 	background-image: url(../images/instagram.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
 }
 
 .pintrest a {
 	background-image: url(../images/pinterest.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
 }
 
 .youtube a {
 	background-image: url(../images/youtube.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
 }
 
 .navbar-brand {
@@ -498,6 +498,7 @@ color: #fff;
 	background: -owg-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
 	-pie-background: -pie-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
 	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+	
 	margin: 0px;
 }
 .country_header .top_description p,
@@ -531,6 +532,124 @@ color: #fff;
     margin: 0 auto;
 	text-align: center;
 }
+
+.footer {
+	background: url(../images/footer.jpg);
+    position: relative;
+	border:none;
+	margin-top: 0px;
+	padding: 35px 0 0 0;
+}
+    
+.footer-menu li {
+		width:30%;
+		float:left;
+}
+
+.footer-menu li a {
+	
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}	
+
+.footer-menu li a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.sign_up {
+float:left;
+	
+}
+
+.social-list {
+	float:left;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+.social-list li {
+	
+	display: inline-block;
+    width: 50px;
+}
+
+.region-footer {
+	float:left;
+	width:100%;
+	
+}
+
+.block-block-3 {
+	background: #070c34;
+	text-align:center;
+}
+
+
+
+.sign_up a{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #c5e9f7;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.7;
+    padding: 6px;
+}	
+
+.sign_up a:hover {
+	text-decoration:none;
+}
+
+.footer-credits {
+    margin: 0 auto;
+    color: #9497a7;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+}
+
+.block-block-3 img {
+	text-align:center;
+}
+
+.social-list li {
+	
+}
+
+.social-list .facebook a {
+	background-image: url(../images/facebook.png);
+	background-repeat: no-repeat;
+    text-indent: -99999px;
+    margin: 15px 0 0;
+}
+
+.social-list .instagram a {
+	background-image: url(../images/instagram.png);
+	background-repeat: no-repeat;
+    text-indent: -99999px;
+    margin: 15px 0 0;
+}
+
+.social-list .pintrest a {
+	background-image: url(../images/pinterest.png);
+	background-repeat: no-repeat;
+    text-indent: -99999px;
+    margin: 15px 0 0;
+}
+
+.social-list .youtube a {
+	background-image: url(../images/youtube.png);
+	background-repeat: no-repeat;
+    text-indent: -99999px;
+    margin: 15px 0 0;
+}
+
+
 @media (max-width:767px){
 	
 	.region-socialshare {
