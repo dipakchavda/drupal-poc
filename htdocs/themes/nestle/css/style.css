@@ -349,10 +349,7 @@ color: #fff;
 	text-transform:uppercase;
 }
 
-# {
-	
-	padding-top:38px;
-}
+
 
 .menu-main-wrapper .main-menu {
     position: relative;
@@ -490,8 +487,8 @@ color: #fff;
 	position:relative;
 }
 
-.country_hub_banner h3,
-.city_hub_banner h3 
+.country_hub_banner h3
+
 {
 	position: absolute;
 	bottom: 0;
@@ -509,6 +506,22 @@ color: #fff;
 	
 	margin: 0px;
 }
+
+.city_hub_banner h3 
+{
+	    position: absolute;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    font-family: Playfair Display;
+    font-weight: 700;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    font-style: italic;
+    left: 0;
+}
 .country_header .top_description p,
 .city_header .top_description p 
 {
@@ -521,8 +534,7 @@ color: #fff;
     width: 50%;
     margin: 0 auto;
 }
-.country_header h1,
-.city_header h1 
+.country_header h1
 {
     color: #060E33;
     font-size: 120px;
@@ -532,6 +544,20 @@ color: #fff;
     text-align: center;
     text-transform: uppercase;
     margin-top: 60px;
+}
+
+.city_header h1 
+{
+     color: #060e33;
+    font-size: 46px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: 46px;
+    padding: 0 0 0 0;
+    margin: 30px 0 28px 0;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
 }
 .country_header .top_description h2,
 .city_header .top_description h2 
@@ -625,10 +651,10 @@ float:left;
 	text-align:center;
 }
 
-.social-list li {
-	
+.view-city-guide-articles-pagination {
+	width:80%;
+	margin:0 auto;
 }
-
 
 
 #backtotop {
