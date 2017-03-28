@@ -81,7 +81,7 @@ class HomePageCountryListBlock extends BlockBase {
 				$result[$key]['tid'] = $country_term->Id(); // City Term ID
 				$result[$key]['content_url'] = $country_term->toUrl();	// City URL
 				$result[$key]['image_data'] = $arr_country_term['field_img_country'];	// Image Object
-				$result[$key]['image_data'][0]['uri'] = ImageStyle::load('countrybox_220')->buildUrl(File::load($arr_country_term['field_img_country'][0]['target_id'])->getFileUri());	// Image URL
+				$result[$key]['image_data'][0]['uri'] = ImageStyle::load('country_325_x_183')->buildUrl(File::load($arr_country_term['field_img_country'][0]['target_id'])->getFileUri());	// Image URL
 				$result[$key]['title'] = $country_term->toLink()->getText();	// City Name
 				$result[$key]['description'] = $country_term->getDescription();	// City Name
 				$count++;

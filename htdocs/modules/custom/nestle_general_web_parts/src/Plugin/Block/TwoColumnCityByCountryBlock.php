@@ -59,7 +59,8 @@ class TwoColumnCityByCountryBlock extends BlockBase {
 					$result[$key]['tid'] = $city_term->Id(); // City Term ID
 					$result[$key]['content_url'] = $city_term->toUrl();	// City URL
 					$result[$key]['image_data'] = $arr_city_term['field_img_city'];	// Image Object
-					$result[$key]['image_data'][0]['uri'] = ImageStyle::load('sub_country_469')->buildUrl(File::load($arr_city_term['field_img_city'][0]['target_id'])->getFileUri());	// Image URL
+					#$result[$key]['image_data'][0]['uri'] = ImageStyle::load('sub_country_469')->buildUrl(File::load($arr_city_term['field_img_city'][0]['target_id'])->getFileUri());	// Image URL
+                                        $result[$key]['image_data'][0]['uri'] = ImageStyle::load('country_741_392')->buildUrl(File::load($arr_city_term['field_img_city'][0]['target_id'])->getFileUri());      // Image URL
 					$result[$key]['title'] = $city_term->toLink()->getText();	// City Name
 					$result[$key]['description'] = $city_term->getDescription();	// City Name
 					$count++;
