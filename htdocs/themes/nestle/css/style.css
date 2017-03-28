@@ -482,6 +482,10 @@ color: #fff;
 	
 }
 
+.country_hub_banner {
+	position:relative;
+}
+
 .country_hub_banner h3,
 .city_hub_banner h3 
 {
@@ -567,7 +571,7 @@ float:left;
 .social-list {
 	float:left;
 	margin-left: 50px;
-	margin-top: 15px;
+	
 }
 
 .social-list li {
@@ -582,7 +586,7 @@ float:left;
 	
 }
 
-.block-block-3 {
+#block-block-3 {
 	background: #070c34;
 	text-align:center;
 }
@@ -613,7 +617,7 @@ float:left;
     text-align: center;
 }
 
-.block-block-3 img {
+#block-block-3 img {
 	text-align:center;
 }
 
@@ -621,11 +625,22 @@ float:left;
 	
 }
 
+
+
+#backtotop {
+    position: absolute;
+    top: -42px;
+    right: 0;
+}
+
 .social-list .facebook a {
 	background-image: url(../images/facebook.png);
 	background-repeat: no-repeat;
     text-indent: -99999px;
     margin: 15px 0 0;
+	float: left;
+    width: 27px;
+    height: 27px;
 }
 
 .social-list .instagram a {
@@ -633,6 +648,9 @@ float:left;
 	background-repeat: no-repeat;
     text-indent: -99999px;
     margin: 15px 0 0;
+	    float: left;
+    width: 27px;
+    height: 27px;
 }
 
 .social-list .pintrest a {
@@ -640,6 +658,9 @@ float:left;
 	background-repeat: no-repeat;
     text-indent: -99999px;
     margin: 15px 0 0;
+	    float: left;
+    width: 27px;
+    height: 27px;
 }
 
 .social-list .youtube a {
@@ -647,6 +668,9 @@ float:left;
 	background-repeat: no-repeat;
     text-indent: -99999px;
     margin: 15px 0 0;
+	    float: left;
+    width: 27px;
+    height: 27px;
 }
 
 
