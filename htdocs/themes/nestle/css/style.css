@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 
-#content { width: 97.4%; }
+#content { width: 97.4%; margin-bottom:50px; }
 
 body {
 	font-family: "Playfair Display",serif;
@@ -774,6 +774,41 @@ margin-left:20px;
 	outline: none;
     outline-offset: none;
 }
+
+#block-helloblock-2 .block-title {
+font-family: "Playfair Display",serif;
+    display: block;
+    position: relative;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    font-size: 24px;	
+}
+
+#block-helloblock-2 .block-title::before{
+    right: 60%;
+    -webkit-transform: translateX(-2em);
+	    content: '';
+    position: absolute;
+    width: 3em;
+    top: 50%;
+    border-bottom: 1px solid;
+
+}
+
+#block-helloblock-2 .block-title::after {
+	  content: '';
+    position: absolute;
+    width: 3em;
+    top: 50%;
+    border-bottom: 1px solid;
+    left: 60%;
+	transform: translateX(2em);
+}
+	
+	  
+
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
 	
