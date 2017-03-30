@@ -463,7 +463,7 @@ color: #fff;
 	   
    }
 .container-wrapper h4::after {
-	: '';
+	    content: '';
     display: block;
     margin: 14px auto 0 auto;
     background-image: url(../images/section_title_mustache.png);
@@ -472,6 +472,12 @@ color: #fff;
     height: 15px;
 
 	
+}
+
+.description p {
+	font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 .nav.nav-tabs li a:hover {
