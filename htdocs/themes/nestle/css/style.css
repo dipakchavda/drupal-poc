@@ -411,14 +411,16 @@ color: #fff;
 }  
 
 .product-wrapper {
-	width: 980px;
+	width: calc(99.99% * 4/6 - (21px - 21px * 4/6));
     margin: 0 auto;
 }
 
 .container-wrapper {
 	text-align:center;
 }
-
+.nav-tabs{
+	border:none;
+}
 .nav.nav-tabs li {
  box-sizing: border-box;
     cursor: pointer;
@@ -434,7 +436,7 @@ color: #fff;
 	
 }
    .nav.nav-tabs li a {
-	   width: 156px;
+	width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -572,7 +574,7 @@ color: #fff;
     position: relative;
 	border:none;
 	margin-top: 0px;
-	padding: 35px 0 0 0;
+	padding: 15px 0 0 0;
 }
     
 .footer-menu li {
@@ -620,6 +622,7 @@ margin-left:20px;
 #block-block-3 {
 	background: #070c34;
 	text-align:center;
+	margin-top: 30px;
 }
 
 
@@ -731,6 +734,7 @@ margin-left:20px;
 .footer-social.footer-link-section {
 	width:41%;
 	float:right;
+   margin-top: 30px; 
 }
 .logo_footer{
 	    position: absolute;
@@ -740,6 +744,40 @@ margin-left:20px;
     -ms-transform: translate(-50%, -11%);
     transform: translate(-50%, -11%);
     z-index: 99;
+}
+.nav.nav-tabs li.active{
+	background-color: #b5e3f4;
+}
+.nav.nav-tabs li.active::after {
+	content: '';
+    background-image: url(../images/tab_items_active_indicator.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 12px;
+    height: 17px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color:transparent;
+	border:none;
+	outline: none;
+    outline-offset: none;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	
+	.nav.nav-tabs li a {
+		width:71px;
+	}
+	
+	.footer-menu li {
+		width:50%;
+	}
 }
 
 @media (max-width:767px){
@@ -765,5 +803,17 @@ margin-left:20px;
     width: 50%;
     float: left;
     text-align: center;
+}
+
+.product-wrapper {
+	width: auto;
+}
+
+.nav.nav-tabs li {
+	width:100%;
+}
+
+.nav.nav-tabs li a {
+	width:100%;
 }
 	}
