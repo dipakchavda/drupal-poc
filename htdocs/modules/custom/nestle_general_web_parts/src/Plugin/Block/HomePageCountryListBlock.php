@@ -11,6 +11,7 @@ use \Drupal\Core\Routing;
 use \Drupal\Core\Url;
 use Drupal\image\Entity\ImageStyle;
 use \Drupal\file\Entity\File;
+use \Drupal\nestle_general_web_parts\Controller\NestleGeneralWebPartsController;
 
 /**
  * Provides a 'Country List' Block.
@@ -32,7 +33,7 @@ class HomePageCountryListBlock extends BlockBase {
 		'#type' => 'markup',
 		'#theme' => 'country_list_block',
 		'#content' => $this->getContent(),
-		'#cache' => array('max-age' => 0)
+		'#cache' => array('max-age' => NestleGeneralWebPartsController::NESTLE_CACHE_MAX_AGE)
     );
   }
 

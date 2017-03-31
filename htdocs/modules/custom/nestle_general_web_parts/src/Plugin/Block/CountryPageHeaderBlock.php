@@ -11,6 +11,7 @@ use \Drupal\Core\Routing;
 use \Drupal\Core\Url;
 use Drupal\image\Entity\ImageStyle;
 use \Drupal\file\Entity\File;
+use \Drupal\nestle_general_web_parts\Controller\NestleGeneralWebPartsController;
 
 /**
  * Provides a 'Country Page Header Block' Block.
@@ -31,7 +32,7 @@ class CountryPageHeaderBlock extends BlockBase {
 		'#type' => 'markup',
 		'#theme' => 'country_header_block',
 		'#content' => $this->getContent(),
-		'#cache' => array('max-age' => 0)
+		'#cache' => array('max-age' => NestleGeneralWebPartsController::NESTLE_CACHE_MAX_AGE)
     );
   }
   

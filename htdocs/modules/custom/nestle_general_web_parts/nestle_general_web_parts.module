@@ -46,5 +46,10 @@ function nestle_general_web_parts_theme($existing, $type, $theme, $path) {
       'template' => 'four-col-prods-block',
 	  'variables' => array( 'content' => NULL ),
     ),
+	'products_detail_page_block' => array(
+      'template' => 'products-detail-page-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
   );
+  
 }

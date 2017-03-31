@@ -11,6 +11,7 @@ use \Drupal\Core\Routing;
 use \Drupal\Core\Url;
 use Drupal\image\Entity\ImageStyle;
 use \Drupal\file\Entity\File;
+use \Drupal\nestle_general_web_parts\Controller\NestleGeneralWebPartsController;
 
 /**
  * Provides a 'Three Column Product List By Category Block' Block.
@@ -31,7 +32,7 @@ class ThreeColumnProductListByCategoryBlock extends BlockBase {
 		'#type' => 'markup',
 		'#theme' => 'three_col_prods_block',
 		'#content' => $this->getContent(),
-		'#cache' => array('max-age' => 0)
+		'#cache' => array('max-age' => NestleGeneralWebPartsController::NESTLE_CACHE_MAX_AGE)
     );
   }
   
