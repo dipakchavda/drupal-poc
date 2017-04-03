@@ -1,0 +1,14 @@
+uuid: 675713b6-c4c4-49f4-a434-0a8a3e550ef5
+langcode: en
+status: true
+dependencies: {  }
+name: country_thumbnail_297x166
+label: country-thumbnail-297x297
+effects:
+  f3c34698-89fa-49d7-87b3-4430716bb418:
+    uuid: f3c34698-89fa-49d7-87b3-4430716bb418
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 297
+      height: 297

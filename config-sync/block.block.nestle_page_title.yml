@@ -1,0 +1,27 @@
+uuid: 197d670c-56eb-4e32-9fa1-85aa77ed6858
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nestle
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: nestle_page_title
+theme: nestle
+region: header
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/*\r\n/products/*"
+    negate: true
+    context_mapping: {  }

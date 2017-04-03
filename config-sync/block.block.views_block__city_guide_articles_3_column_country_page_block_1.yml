@@ -1,0 +1,30 @@
+uuid: b99a4db3-dfc7-405e-b464-39325ddb5c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_guide_articles_3_column_country_page
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__city_guide_articles_3_column_country_page_block_1
+theme: bootstrap
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:city_guide_articles_3_column_country_page-block_1'
+settings:
+  id: 'views_block:city_guide_articles_3_column_country_page-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy/milano\r\n/country/italy/rome\r\n/country/us/new-york\r\n/country/us/chicago"
+    negate: false
+    context_mapping: {  }

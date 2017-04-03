@@ -1,0 +1,26 @@
+uuid: 0397a2e1-3750-48f8-8422-2f2242d42bad
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - system
+  theme:
+    - nestle
+id: homepagecountrylistblock
+theme: nestle
+region: content
+weight: -14
+provider: null
+plugin: country_list_block
+settings:
+  id: country_list_block
+  label: 'SAPORI DAL MONDO'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/country/italy\r\n/country/peru\r\n/country/russia\r\n/country/uk\r\n/country/us"
+    negate: false
+    context_mapping: {  }

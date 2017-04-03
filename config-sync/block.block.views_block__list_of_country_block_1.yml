@@ -1,0 +1,30 @@
+uuid: da9a91ff-7938-4b4e-ba92-b1753b752df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.list_of_country
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__list_of_country_block_1
+theme: bootstrap
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:list_of_country-block_1'
+settings:
+  id: 'views_block:list_of_country-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

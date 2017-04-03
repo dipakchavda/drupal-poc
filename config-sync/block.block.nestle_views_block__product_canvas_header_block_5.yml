@@ -1,0 +1,38 @@
+uuid: 3730dbd0-724a-411a-86c8-9d5aec81b7a8
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.product_canvas_header
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - nestle
+id: nestle_views_block__product_canvas_header_block_5
+theme: nestle
+region: '-1'
+weight: -11
+provider: null
+plugin: 'views_block:product_canvas_header-block_5'
+settings:
+  id: 'views_block:product_canvas_header-block_5'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /page3
+    negate: false
+    context_mapping: {  }

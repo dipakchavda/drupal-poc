@@ -1,0 +1,30 @@
+uuid: 81afb8c1-109d-4b3b-9b32-471eb83bfdfc
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.city_guide_articles_3_column_country_page
+  module:
+    - system
+    - views
+  theme:
+    - nestle
+id: nestle_views_block__city_guide_articles_3_column_country_page_block_2
+theme: nestle
+region: '-1'
+weight: -11
+provider: null
+plugin: 'views_block:city_guide_articles_3_column_country_page-block_2'
+settings:
+  id: 'views_block:city_guide_articles_3_column_country_page-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy\r\n/country/us"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: a3b82c0c-c9ac-40c7-b53c-c4b9e8ea1fb7
+langcode: en
+status: true
+dependencies: {  }
+name: product_detail_793x
+label: product-detail-793x446
+effects:
+  5fe60a14-18d4-4eb4-83c5-40bc8f46f111:
+    uuid: 5fe60a14-18d4-4eb4-83c5-40bc8f46f111
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 793
+      height: 446

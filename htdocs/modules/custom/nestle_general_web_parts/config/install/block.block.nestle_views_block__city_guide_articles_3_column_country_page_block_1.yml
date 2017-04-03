@@ -1,0 +1,30 @@
+uuid: 1865e4fe-ebea-42a0-9c24-654a43dd74f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_guide_articles_3_column_country_page
+  module:
+    - system
+    - views
+  theme:
+    - nestle
+id: nestle_views_block__city_guide_articles_3_column_country_page_block_1
+theme: nestle
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:city_guide_articles_3_column_country_page-block_1'
+settings:
+  id: 'views_block:city_guide_articles_3_column_country_page-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy/milano\r\n/country/italy/rome\r\n/country/us/new-york\r\n/country/us/chicago"
+    negate: false
+    context_mapping: {  }

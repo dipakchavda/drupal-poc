@@ -1,0 +1,14 @@
+uuid: 6b1a4b8c-16d8-4c21-a2d4-d88e5e3770e4
+langcode: en
+status: true
+dependencies: {  }
+name: triphub_image_372x210
+label: trihub-image-372x210
+effects:
+  b8f970df-76d3-42a5-87fc-f00d7a043367:
+    uuid: b8f970df-76d3-42a5-87fc-f00d7a043367
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 372
+      height: 210

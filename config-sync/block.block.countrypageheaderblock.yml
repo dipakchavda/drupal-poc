@@ -1,0 +1,26 @@
+uuid: 2d839f27-f294-450a-b382-3fac07a13e57
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - system
+  theme:
+    - nestle
+id: countrypageheaderblock
+theme: nestle
+region: nestle_page_header
+weight: -17
+provider: null
+plugin: country_header_block
+settings:
+  id: country_header_block
+  label: 'Country Page Header Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy\r\n/country/us\r\n/country/uk\r\n/country/peru\r\n/country/dk\r\n/country/de"
+    negate: false
+    context_mapping: {  }

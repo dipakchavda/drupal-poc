@@ -1,0 +1,17 @@
+uuid: a2e2b5fc-e06e-43f7-a498-21aa068b7e97
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Product Page Header Banner'
+type: product_page_header_banner
+description: 'Product Page Header Banner'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

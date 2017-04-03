@@ -1,0 +1,17 @@
+uuid: 620c8b91-ed57-41de-905f-f4229d523b70
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Products Page'
+type: products_page
+description: 'Products Page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

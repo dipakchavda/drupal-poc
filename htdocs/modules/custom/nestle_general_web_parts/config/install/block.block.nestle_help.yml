@@ -1,0 +1,22 @@
+uuid: fb8fd5f0-7b6d-49b9-a713-ecd187afec76
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nestle
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: nestle_help
+theme: nestle
+region: help
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

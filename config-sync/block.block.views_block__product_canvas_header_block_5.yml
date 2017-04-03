@@ -1,0 +1,38 @@
+uuid: fa036ab0-f25d-4528-97fa-64cb0d7b9cd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_canvas_header
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__product_canvas_header_block_5
+theme: bootstrap
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:product_canvas_header-block_5'
+settings:
+  id: 'views_block:product_canvas_header-block_5'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/country/italy/milano\r\n/country/italy/rome"
+    negate: false
+    context_mapping: {  }

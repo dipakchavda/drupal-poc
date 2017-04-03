@@ -1,0 +1,14 @@
+uuid: e3774b23-ed67-4624-9683-d284a9222ded
+langcode: en
+status: true
+dependencies: {  }
+name: header_image_1680x408
+label: 'Header Image 1680x408'
+effects:
+  0d6b85dd-9d7d-48cb-b255-1407d0b522ad:
+    uuid: 0d6b85dd-9d7d-48cb-b255-1407d0b522ad
+    id: image_resize
+    weight: 1
+    data:
+      width: 1680
+      height: 408

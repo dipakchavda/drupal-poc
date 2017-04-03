@@ -1,0 +1,30 @@
+uuid: b8db6970-0be6-4da7-8188-e14dadb968f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_guide_articles_pagination
+  module:
+    - system
+    - views
+  theme:
+    - nestle
+id: nestle_views_block__city_guide_articles_pagination_block_1
+theme: nestle
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:city_guide_articles_pagination-block_1'
+settings:
+  id: 'views_block:city_guide_articles_pagination-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy\r\n/country/us"
+    negate: true
+    context_mapping: {  }

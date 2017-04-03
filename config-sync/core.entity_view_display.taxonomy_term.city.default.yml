@@ -1,0 +1,17 @@
+uuid: f30bf375-ead8-4bd6-9bf9-be0947db6496
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.city.field_country
+    - field.field.taxonomy_term.city.field_img_city
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.default
+targetEntityType: taxonomy_term
+bundle: city
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_country: true
+  field_img_city: true

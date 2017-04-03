@@ -1,0 +1,68 @@
+uuid: 96d587e5-5c24-41fb-bdec-008c3856f243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.country.field_country_subtitle
+    - field.field.taxonomy_term.country.field_country_text
+    - field.field.taxonomy_term.country.field_country_title
+    - field.field.taxonomy_term.country.field_img_country
+    - image.style.thumbnail
+    - taxonomy.vocabulary.country
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.country.default
+targetEntityType: taxonomy_term
+bundle: country
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_country_subtitle:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_country_text:
+    weight: 34
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_country_title:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_img_country:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

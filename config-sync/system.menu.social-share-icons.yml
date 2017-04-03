@@ -1,0 +1,8 @@
+uuid: acdd1d63-8210-4a38-b54a-ea58940585e1
+langcode: en
+status: true
+dependencies: {  }
+id: social-share-icons
+label: Social-share-icons
+description: Social-share-icons
+locked: false

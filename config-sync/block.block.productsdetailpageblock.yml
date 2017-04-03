@@ -1,0 +1,28 @@
+uuid: 5dba8876-7ac8-454e-84e0-11b1fbb92dd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - node
+  theme:
+    - nestle
+id: productsdetailpageblock
+theme: nestle
+region: content
+weight: -17
+provider: null
+plugin: products_detail_page_block
+settings:
+  id: products_detail_page_block
+  label: 'Products Detail Page Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      products_page: products_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,14 @@
+uuid: 8342550d-9a57-4ea2-8261-083fa8eeca28
+langcode: en
+status: true
+dependencies: {  }
+name: country_741_392
+label: country_741_392
+effects:
+  a7ed60de-d42c-4437-9976-3a9e4d08f3f3:
+    uuid: a7ed60de-d42c-4437-9976-3a9e4d08f3f3
+    id: image_resize
+    weight: 1
+    data:
+      width: 741
+      height: 392

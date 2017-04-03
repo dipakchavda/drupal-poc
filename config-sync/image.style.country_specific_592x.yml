@@ -1,0 +1,15 @@
+uuid: 5732e716-7a8c-48a6-8107-d9a0ba4240ad
+langcode: en
+status: true
+dependencies: {  }
+name: country_specific_592x
+label: country-specific-592x332
+effects:
+  3fb5b7bd-dce5-4337-9ced-8ff58b7e1801:
+    uuid: 3fb5b7bd-dce5-4337-9ced-8ff58b7e1801
+    id: image_crop
+    weight: 1
+    data:
+      width: 590
+      height: 332
+      anchor: center-center

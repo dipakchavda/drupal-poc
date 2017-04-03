@@ -1,0 +1,26 @@
+uuid: 67983a3a-0d5c-4340-8177-7c52a9a07d43
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - demo
+_core:
+  default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
+id: demo_tools
+theme: demo
+region: '-1'
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

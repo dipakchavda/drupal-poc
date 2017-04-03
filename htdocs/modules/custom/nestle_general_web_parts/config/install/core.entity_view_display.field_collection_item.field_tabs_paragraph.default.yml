@@ -1,0 +1,39 @@
+uuid: e2790ee4-c392-4ab0-9371-4ac9d442db86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_tabs_paragraph.field_paragraph_image
+    - field.field.field_collection_item.field_tabs_paragraph.field_paragraph_text
+    - field.field.field_collection_item.field_tabs_paragraph.field_tab_title
+    - field_collection.field_collection.field_tabs_paragraph
+    - image.style.product_detail_793x
+  module:
+    - image
+    - text
+id: field_collection_item.field_tabs_paragraph.default
+targetEntityType: field_collection_item
+bundle: field_tabs_paragraph
+mode: default
+content:
+  field_paragraph_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: product_detail_793x
+      image_link: content
+    third_party_settings: {  }
+    type: image
+  field_paragraph_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_tab_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden: {  }

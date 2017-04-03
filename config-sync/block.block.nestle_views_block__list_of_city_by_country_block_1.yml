@@ -1,0 +1,30 @@
+uuid: 03d2f527-8ef2-446e-8378-e626c237de26
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.list_of_city_by_country
+  module:
+    - system
+    - views
+  theme:
+    - nestle
+id: nestle_views_block__list_of_city_by_country_block_1
+theme: nestle
+region: '-1'
+weight: -12
+provider: null
+plugin: 'views_block:list_of_city_by_country-block_1'
+settings:
+  id: 'views_block:list_of_city_by_country-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/country/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,38 @@
+uuid: 372c0849-36d5-4987-879b-4ca948c35b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_canvas_header
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__product_canvas_header_block_3
+theme: bootstrap
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:product_canvas_header-block_3'
+settings:
+  id: 'views_block:product_canvas_header-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /page1
+    negate: false
+    context_mapping: {  }

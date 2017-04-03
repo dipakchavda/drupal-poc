@@ -1,0 +1,22 @@
+uuid: 85a29612-5b55-4791-b884-4416308b2363
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nestle
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: nestle_powered
+theme: nestle
+region: '-1'
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

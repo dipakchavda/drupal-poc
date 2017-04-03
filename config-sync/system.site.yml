@@ -1,0 +1,14 @@
+uuid: 1aff7a79-e7d1-4743-94eb-0c9036f4e38e
+name: 'Itineraries of taste'
+mail: ashwin.d.paramr@accenture.com
+slogan: ''
+page:
+  403: /node/20
+  404: /node/19
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

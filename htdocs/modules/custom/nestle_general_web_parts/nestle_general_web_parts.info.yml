@@ -6,6 +6,8 @@ type: module
 dependencies:
   - block
   - node
+  - google_map_field
+  - field_collection
 
 version: '8.x-1.0'
 project: 'NESTLE_GENERAL_WEB_PARTS'

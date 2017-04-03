@@ -1,0 +1,112 @@
+uuid: 39884992-5342-4ff8-a4de-66cf073a0fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.products_page.body
+    - field.field.node.products_page.field_city
+    - field.field.node.products_page.field_country
+    - field.field.node.products_page.field_google_map
+    - field.field.node.products_page.field_product_category
+    - field.field.node.products_page.field_product_image
+    - field.field.node.products_page.field_tabs_paragraph
+    - image.style.thumbnail
+    - node.type.products_page
+  module:
+    - field_collection
+    - google_map_field
+    - image
+    - path
+    - text
+id: node.products_page.default
+targetEntityType: node
+bundle: products_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_city:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_country:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_google_map:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+  field_product_category:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_product_image:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_tabs_paragraph:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

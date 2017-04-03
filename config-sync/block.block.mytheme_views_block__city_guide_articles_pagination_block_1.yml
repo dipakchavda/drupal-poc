@@ -1,0 +1,30 @@
+uuid: 1e74adb5-3099-4ca6-b29e-9f910e681d86
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_guide_articles_pagination
+  module:
+    - system
+    - views
+  theme:
+    - mytheme
+id: mytheme_views_block__city_guide_articles_pagination_block_1
+theme: mytheme
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:city_guide_articles_pagination-block_1'
+settings:
+  id: 'views_block:city_guide_articles_pagination-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy\r\n/country/us"
+    negate: true
+    context_mapping: {  }

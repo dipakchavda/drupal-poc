@@ -1,0 +1,38 @@
+uuid: 8308466c-89dc-4094-abbe-749a25e9bf56
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.product_canvas_header
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - mytheme
+id: mytheme_views_block__product_canvas_header_block_4
+theme: mytheme
+region: navigation
+weight: -10
+provider: null
+plugin: 'views_block:product_canvas_header-block_4'
+settings:
+  id: 'views_block:product_canvas_header-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/page1\r\n/page2"
+    negate: false
+    context_mapping: {  }

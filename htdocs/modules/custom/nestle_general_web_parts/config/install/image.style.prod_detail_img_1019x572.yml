@@ -1,0 +1,14 @@
+uuid: f920f14b-87a2-4f13-93ea-80990ea3166d
+langcode: en
+status: true
+dependencies: {  }
+name: prod_detail_img_1019x572
+label: prod_detail_img_1019X572
+effects:
+  bebd6a27-7628-4e08-bf25-567e7b48fc95:
+    uuid: bebd6a27-7628-4e08-bf25-567e7b48fc95
+    id: image_resize
+    weight: 1
+    data:
+      width: 1019
+      height: 572

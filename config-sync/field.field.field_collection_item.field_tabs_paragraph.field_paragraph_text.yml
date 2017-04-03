@@ -1,0 +1,21 @@
+uuid: 5f378a0d-1df7-45c7-802f-8a2ccbb26b34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_paragraph_text
+    - field_collection.field_collection.field_tabs_paragraph
+  module:
+    - text
+id: field_collection_item.field_tabs_paragraph.field_paragraph_text
+field_name: field_paragraph_text
+entity_type: field_collection_item
+bundle: field_tabs_paragraph
+label: 'Paragraph Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

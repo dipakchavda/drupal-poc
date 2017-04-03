@@ -1,0 +1,20 @@
+uuid: d3673545-51d8-4ab8-a15b-89ef400d452a
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+  theme:
+    - nestle
+id: pagefooterblock
+theme: nestle
+region: footer
+weight: 0
+provider: null
+plugin: page_footer_block
+settings:
+  id: page_footer_block
+  label: 'Page Footer Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility: {  }

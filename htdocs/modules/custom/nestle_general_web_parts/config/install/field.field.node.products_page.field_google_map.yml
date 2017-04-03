@@ -1,0 +1,33 @@
+uuid: 5794ba13-286b-45fe-9161-717d016fdef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_map
+    - node.type.products_page
+  module:
+    - google_map_field
+id: node.products_page.field_google_map
+field_name: field_google_map
+entity_type: node
+bundle: products_page
+label: 'Google Map'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    preview: ''
+    actions: {  }
+    lat: '45.4654219'
+    name: ''
+    lon: '9.18592430000001'
+    zoom: '9'
+    type: roadmap
+    width: 100%
+    height: 450px
+    marker: '1'
+    controls: '1'
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

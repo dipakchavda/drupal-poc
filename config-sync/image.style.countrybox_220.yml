@@ -1,0 +1,14 @@
+uuid: 1cde68ac-460b-4152-a795-dd2b5026905b
+langcode: en
+status: true
+dependencies: {  }
+name: countrybox_220
+label: CountryBox_220x220
+effects:
+  53ab9f63-10e4-4dc8-8044-989dd1c1f43d:
+    uuid: 53ab9f63-10e4-4dc8-8044-989dd1c1f43d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220

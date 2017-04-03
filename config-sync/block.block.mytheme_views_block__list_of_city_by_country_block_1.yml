@@ -1,0 +1,30 @@
+uuid: 7c5b8310-8583-4a29-995e-5c2b6b93e1a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.list_of_city_by_country
+  module:
+    - system
+    - views
+  theme:
+    - mytheme
+id: mytheme_views_block__list_of_city_by_country_block_1
+theme: mytheme
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:list_of_city_by_country-block_1'
+settings:
+  id: 'views_block:list_of_city_by_country-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/country/*'
+    negate: false
+    context_mapping: {  }

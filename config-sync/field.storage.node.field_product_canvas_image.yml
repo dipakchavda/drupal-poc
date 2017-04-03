@@ -1,0 +1,30 @@
+uuid: 9012b5b9-dd84-4001-a238-d430a95a5d74
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_product_canvas_image
+field_name: field_product_canvas_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: b3b28cb3-d18a-4b50-990e-b9dc188908ca
+    alt: 'No Image'
+    title: 'No Image'
+    width: 1490
+    height: 1080
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: ee324b48-3c3e-4fe1-ad24-07f8cf55319c
+langcode: en
+status: true
+dependencies: {  }
+name: sub_country_469
+label: sub-country-469x264
+effects:
+  34d0cf3b-eff4-4d5e-9fb9-b765a4e92d3b:
+    uuid: 34d0cf3b-eff4-4d5e-9fb9-b765a4e92d3b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 469
+      height: 264

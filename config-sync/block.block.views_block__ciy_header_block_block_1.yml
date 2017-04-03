@@ -1,0 +1,24 @@
+uuid: 7686da76-3e2b-4da7-94a1-933ee298ca7d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.ciy_header_block
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__ciy_header_block_block_1
+theme: bootstrap
+region: '-1'
+weight: -14
+provider: null
+plugin: 'views_block:ciy_header_block-block_1'
+settings:
+  id: 'views_block:ciy_header_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

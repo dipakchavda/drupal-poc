@@ -1,0 +1,21 @@
+uuid: 2089cf09-dbf6-4a77-9189-2f9b4785b135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.country.field_country_subtitle
+    - field.field.taxonomy_term.country.field_country_text
+    - field.field.taxonomy_term.country.field_country_title
+    - field.field.taxonomy_term.country.field_img_country
+    - taxonomy.vocabulary.country
+id: taxonomy_term.country.default
+targetEntityType: taxonomy_term
+bundle: country
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_country_subtitle: true
+  field_country_text: true
+  field_country_title: true
+  field_img_country: true

@@ -1,0 +1,9 @@
+uuid: ba61e8bb-e7ce-4805-8bbf-b5940fc55009
+langcode: en
+status: true
+dependencies: {  }
+name: Country
+vid: country
+description: 'Country Taxonomy'
+hierarchy: 0
+weight: 0

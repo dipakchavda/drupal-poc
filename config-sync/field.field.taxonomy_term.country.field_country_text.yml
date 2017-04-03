@@ -1,0 +1,21 @@
+uuid: 4c123e5e-5d0b-4258-9cea-9bbb0d652def
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_country_text
+    - taxonomy.vocabulary.country
+  module:
+    - text
+id: taxonomy_term.country.field_country_text
+field_name: field_country_text
+entity_type: taxonomy_term
+bundle: country
+label: country_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

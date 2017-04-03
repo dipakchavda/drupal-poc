@@ -1,0 +1,30 @@
+uuid: 2900874c-5e05-4b70-b36a-f52a6b5f9766
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_canvas_header
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__product_canvas_header_block_4
+theme: bootstrap
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:product_canvas_header-block_4'
+settings:
+  id: 'views_block:product_canvas_header-block_4'
+  label: '3 Column product list'
+  provider: views
+  label_display: visible
+  views_label: '3 Column product list'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/page1\r\n/page2"
+    negate: false
+    context_mapping: {  }

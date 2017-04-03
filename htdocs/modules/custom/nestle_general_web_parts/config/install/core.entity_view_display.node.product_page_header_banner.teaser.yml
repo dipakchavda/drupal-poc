@@ -1,0 +1,26 @@
+uuid: 5112d252-33b2-4e1a-a7cb-78fc47439914
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product_page_header_banner.body
+    - node.type.product_page_header_banner
+  module:
+    - text
+    - user
+id: node.product_page_header_banner.teaser
+targetEntityType: node
+bundle: product_page_header_banner
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

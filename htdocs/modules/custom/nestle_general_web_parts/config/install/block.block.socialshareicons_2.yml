@@ -1,0 +1,24 @@
+uuid: 746a583b-618c-4b5f-ad9f-1b051c589f15
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-share-icons
+  module:
+    - system
+  theme:
+    - nestle
+id: socialshareicons_2
+theme: nestle
+region: Socialshare
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-share-icons'
+settings:
+  id: 'system_menu_block:social-share-icons'
+  label: Social-share-icons
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

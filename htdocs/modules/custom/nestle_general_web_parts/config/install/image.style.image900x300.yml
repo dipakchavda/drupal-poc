@@ -1,0 +1,14 @@
+uuid: a7be864d-e42d-4c8a-997a-02d45acc8225
+langcode: en
+status: true
+dependencies: {  }
+name: image900x300
+label: Image1024x300
+effects:
+  5e7a3c26-0ddb-4730-b297-54ba814f6a54:
+    uuid: 5e7a3c26-0ddb-4730-b297-54ba814f6a54
+    id: image_resize
+    weight: 1
+    data:
+      width: 1024
+      height: 300

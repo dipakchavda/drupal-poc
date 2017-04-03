@@ -1,0 +1,28 @@
+uuid: ab9f33f0-1341-4ae2-a4b7-86684ad9166f
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - node
+  theme:
+    - bootstrap
+id: helloblock
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Products Block - 4 Column'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      products_page: products_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

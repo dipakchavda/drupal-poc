@@ -1,0 +1,26 @@
+uuid: 0cb1ab7e-5048-46da-b19f-abda051817d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - system
+  theme:
+    - nestle
+id: citypageheaderblock
+theme: nestle
+region: nestle_page_header
+weight: -16
+provider: null
+plugin: city_header_block
+settings:
+  id: city_header_block
+  label: 'City Page Header Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy/*\r\n/country/us/*\r\n/country/uk/*\r\n/country/peru/*\r\n/country/dk/*\r\n/country/de/*"
+    negate: false
+    context_mapping: {  }

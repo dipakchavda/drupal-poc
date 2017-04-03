@@ -1,0 +1,24 @@
+uuid: 332dc9ab-8452-46f0-85ff-a2a3f1db7eec
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-share-icons
+  module:
+    - system
+  theme:
+    - bootstrap
+id: socialshareicons
+theme: bootstrap
+region: Socialshare
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-share-icons'
+settings:
+  id: 'system_menu_block:social-share-icons'
+  label: Social-share-icons
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

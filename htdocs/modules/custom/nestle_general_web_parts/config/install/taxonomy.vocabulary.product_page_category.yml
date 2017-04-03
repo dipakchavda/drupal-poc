@@ -1,0 +1,9 @@
+uuid: 42850753-3781-4049-a978-bdb287deddbb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Page Category'
+vid: product_page_category
+description: 'Product Page Category'
+hierarchy: 0
+weight: 0

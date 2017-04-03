@@ -1,0 +1,26 @@
+uuid: d990028a-18d3-41e9-8951-cf30c2e0454c
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - system
+  theme:
+    - nestle
+id: twocolumncitylistbycountryblock
+theme: nestle
+region: content
+weight: -16
+provider: null
+plugin: two_col_city_block
+settings:
+  id: two_col_city_block
+  label: 'Two Column City List By Country Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/country/*'
+    negate: false
+    context_mapping: {  }

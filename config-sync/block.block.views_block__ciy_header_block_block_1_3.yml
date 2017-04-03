@@ -1,0 +1,24 @@
+uuid: e91d21ba-6789-425a-9fa0-5e578001d528
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.ciy_header_block
+  module:
+    - views
+  theme:
+    - nestle
+id: views_block__ciy_header_block_block_1_3
+theme: nestle
+region: '-1'
+weight: -12
+provider: null
+plugin: 'views_block:ciy_header_block-block_1'
+settings:
+  id: 'views_block:ciy_header_block-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

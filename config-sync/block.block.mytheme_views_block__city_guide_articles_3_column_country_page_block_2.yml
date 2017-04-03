@@ -1,0 +1,30 @@
+uuid: 419c7e94-7515-40bd-b682-8e4fd416fb10
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_guide_articles_3_column_country_page
+  module:
+    - system
+    - views
+  theme:
+    - mytheme
+id: mytheme_views_block__city_guide_articles_3_column_country_page_block_2
+theme: mytheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:city_guide_articles_3_column_country_page-block_2'
+settings:
+  id: 'views_block:city_guide_articles_3_column_country_page-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/country/italy\r\n/country/us"
+    negate: false
+    context_mapping: {  }

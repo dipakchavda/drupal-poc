@@ -1,0 +1,26 @@
+uuid: 542aa7da-9963-4b85-88ec-2dcba87bb326
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - demo
+_core:
+  default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
+id: demo_main_menu
+theme: demo
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

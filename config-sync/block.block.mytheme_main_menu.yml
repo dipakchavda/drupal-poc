@@ -1,0 +1,26 @@
+uuid: d063acdd-4661-4ea0-9139-7285484aafd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mytheme
+_core:
+  default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
+id: mytheme_main_menu
+theme: mytheme
+region: navigation_collapsible
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

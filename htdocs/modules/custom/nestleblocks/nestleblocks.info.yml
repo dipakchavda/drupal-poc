@@ -1,9 +1,0 @@
-name: Nestle Blocks
-type: module
-description: 'This is an Drupal 8 Nestle Blocks Module'
-package: Nestle
-version: 8.x
-core: 8.x
-dependencies:
-  - node
-  - block

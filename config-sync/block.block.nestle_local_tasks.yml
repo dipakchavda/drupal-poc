@@ -1,0 +1,22 @@
+uuid: aef376d2-c38f-47ec-9d52-03e4b4fb3d3a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nestle
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: nestle_local_tasks
+theme: nestle
+region: header
+weight: -15
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

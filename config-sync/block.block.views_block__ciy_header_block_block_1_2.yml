@@ -1,0 +1,30 @@
+uuid: 54c46983-e0bf-4a71-9d14-80e4623b287e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ciy_header_block
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__ciy_header_block_block_1_2
+theme: bootstrap
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:ciy_header_block-block_1'
+settings:
+  id: 'views_block:ciy_header_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /country/italy/milano
+    negate: false
+    context_mapping: {  }

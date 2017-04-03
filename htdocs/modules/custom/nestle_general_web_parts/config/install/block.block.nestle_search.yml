@@ -1,0 +1,22 @@
+uuid: 03e89722-087c-4b1f-a348-5563618dfc74
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - nestle
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: nestle_search
+theme: nestle
+region: '-1'
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

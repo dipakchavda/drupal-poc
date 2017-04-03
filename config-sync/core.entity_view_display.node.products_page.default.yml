@@ -1,0 +1,32 @@
+uuid: b5c767f2-accc-48bd-86b1-c9385c8592cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.products_page.body
+    - field.field.node.products_page.field_city
+    - field.field.node.products_page.field_country
+    - field.field.node.products_page.field_google_map
+    - field.field.node.products_page.field_product_category
+    - field.field.node.products_page.field_product_image
+    - field.field.node.products_page.field_tabs_paragraph
+    - node.type.products_page
+  module:
+    - user
+id: node.products_page.default
+targetEntityType: node
+bundle: products_page
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_city: true
+  field_country: true
+  field_google_map: true
+  field_product_category: true
+  field_product_image: true
+  field_tabs_paragraph: true

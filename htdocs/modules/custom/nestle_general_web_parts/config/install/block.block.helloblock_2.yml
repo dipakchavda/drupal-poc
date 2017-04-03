@@ -1,0 +1,28 @@
+uuid: b7b27bfe-b074-4f18-844e-104d5b314611
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - node
+  theme:
+    - nestle
+id: helloblock_2
+theme: nestle
+region: content
+weight: -11
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Ti suggeriamo anche'
+  provider: nestle_general_web_parts
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      products_page: products_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

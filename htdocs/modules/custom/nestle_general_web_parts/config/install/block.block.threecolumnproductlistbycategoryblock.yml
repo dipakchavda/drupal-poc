@@ -1,0 +1,26 @@
+uuid: 8b035e9f-663e-4dac-9fe1-afa0030c6d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - nestle_general_web_parts
+    - system
+  theme:
+    - nestle
+id: threecolumnproductlistbycategoryblock
+theme: nestle
+region: content
+weight: -12
+provider: null
+plugin: three_col_prods_block
+settings:
+  id: three_col_prods_block
+  label: 'Three Column Product List By Category Block'
+  provider: nestle_general_web_parts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/country/*'
+    negate: false
+    context_mapping: {  }

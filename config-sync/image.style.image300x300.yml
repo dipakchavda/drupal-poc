@@ -1,0 +1,14 @@
+uuid: e1044689-f8ad-4405-a85a-7fe177105fa2
+langcode: en
+status: true
+dependencies: {  }
+name: image300x300
+label: Image300x300
+effects:
+  6b4ad4a9-3399-4ebf-86b3-e2a64a9b6252:
+    uuid: 6b4ad4a9-3399-4ebf-86b3-e2a64a9b6252
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 300

@@ -1,0 +1,14 @@
+uuid: 47098fcf-eeca-4bde-ac5d-d25dc1ca485b
+langcode: en
+status: true
+dependencies: {  }
+name: country_325_x_183
+label: country_325_x_183
+effects:
+  2d059302-3c40-4cce-846b-9986b7dcbd8b:
+    uuid: 2d059302-3c40-4cce-846b-9986b7dcbd8b
+    id: image_resize
+    weight: 1
+    data:
+      width: 325
+      height: 183

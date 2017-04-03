@@ -1,0 +1,28 @@
+uuid: 44040141-97d3-4b21-ba73-b241f49a591b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_page_nid
+    - node.type.page
+    - node.type.product_page_header_banner
+id: node.product_page_header_banner.field_product_page_nid
+field_name: field_product_page_nid
+entity_type: node
+bundle: product_page_header_banner
+label: Product_Page_NID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

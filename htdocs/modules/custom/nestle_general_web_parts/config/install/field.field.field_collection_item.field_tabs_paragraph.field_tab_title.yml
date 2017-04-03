@@ -1,0 +1,21 @@
+uuid: 2f8dcca5-b5ff-4826-893e-a6ba35baa4fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_tab_title
+    - field_collection.field_collection.field_tabs_paragraph
+  module:
+    - text
+id: field_collection_item.field_tabs_paragraph.field_tab_title
+field_name: field_tab_title
+entity_type: field_collection_item
+bundle: field_tabs_paragraph
+label: 'Tab Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

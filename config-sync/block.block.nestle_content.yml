@@ -1,0 +1,22 @@
+uuid: 7492b656-8f27-4838-8bba-87058d27434a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nestle
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: nestle_content
+theme: nestle
+region: content
+weight: -18
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
