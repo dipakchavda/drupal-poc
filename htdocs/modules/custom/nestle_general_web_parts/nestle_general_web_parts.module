@@ -50,6 +50,10 @@ function nestle_general_web_parts_theme($existing, $type, $theme, $path) {
       'template' => 'products-detail-page-block',
 	  'variables' => array( 'content' => NULL ),
     ),
+	'home_page_header_block' => array(
+      'template' => 'home-page-header-block',
+	  'variables' => array( 'content' => NULL ),
+    ),
   );
   
 }

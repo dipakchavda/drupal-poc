@@ -821,6 +821,64 @@ font-family: "Playfair Display",serif;
     margin-bottom: 20px;
 }
 
+/* Home Page Header image block */
+.hometopbanner {
+    position: relative;
+    z-index: 70;
+    top: 24px;
+}
+.hometopbanner .home_top_dic {
+    position: absolute;
+    top: 33%;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+}
+.hometopbanner .home_top_dic h1 {
+    color: #060E33;
+    font-size: 60px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 52px;
+    margin-top: 40px;
+}
+.hometopbanner .home_top_dic h1 span {
+    display: block;
+}
+.hometopbanner .home_top_dic h3 {
+    color: #060E33;
+    font-size: 28px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 10px;
+}
+.hometopbanner .home_top_dic .homediscover {
+    color: #060E33;
+    font-size: 13px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    width: 190px;
+    margin: 0 auto;
+    border: solid #060E33 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+.hometopbanner .home_top_dic .homediscover a {
+    color: #060E33;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+}
+/* Home Page Header image block */
+
+/*****************************************************************************************************************************************/
+/****************************************************** RESPONSIVE MEDIA QUERIES *********************************************************/
+/*****************************************************************************************************************************************/
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
 	

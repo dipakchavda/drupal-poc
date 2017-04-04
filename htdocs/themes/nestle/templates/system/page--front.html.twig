@@ -69,33 +69,32 @@
     %}
 	
 	<div class="panel-pane pane-block pane-system-main-menu menu-main-wrapper" id="main-menu-desktop">
-            <ul class="main-menu">
-              {{ page.navigation_collapsible }}						 
-            </ul>
-        </div>
-		
+		<ul class="main-menu">
+			{{ page.navigation_collapsible }}						 
+		</ul>
+	</div>
 		
     <header class="panel-display" id="top" role="banner">
       {% if not navbar_attributes.hasClass('container') %}
         
       {% endif %}
       
-	  <div class="navbarheader">
-		
-		<div class="header-menu-btn">
-            <div id="nav-icon3">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-		
-		{{ page.Socialshare }}
-        {{ page.navigation }}
-	    {{ page.userAccount }}
-		
-      </div>
+		<div class="navbarheader">
+			
+			<div class="header-menu-btn">
+				<div id="nav-icon3">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			
+			{{ page.Socialshare }}
+			{{ page.navigation }}
+			{{ page.userAccount }}
+			
+		</div>
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
@@ -106,35 +105,23 @@
       {% if not navbar_attributes.hasClass('container') %}
         
       {% endif %}
+	  
     </header>
+	
+	{% if page.home_page_header %}
+		{{ page.home_page_header }}
+	{% endif %}
+	
   {% endblock %}
 {% endif %}
-
-
-
-
-<!--div class="main-content jumbotron">
-
-	
-	
-	{% if page.jumbotron_section %}
-        {% block jumbotron_section %}
-          <div class="col-sm-12" role="heading">
-            {{ page.jumbotron_section }}
-          </div>
-        {% endblock %}
-      {% endif %}
-	
-</div-->
 
 {# Main #}
 {% block main %}
   <div role="main" id="content" class="main-container {{ container }} js-quickedit-main-content">
 	  
-	{% if nestle_page_header %}
-		{{ nestle_page_header }}
+	{% if page.nestle_page_header %}
+		{{ page.nestle_page_header }}
 	{% endif %}
-	  
 	  
     <div class="row">
 

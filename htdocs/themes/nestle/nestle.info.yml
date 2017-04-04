@@ -3,17 +3,18 @@ type: theme
 base theme: bootstrap
 
 name: 'nestle'
-description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
-package: 'Bootstrap'
+description: 'This is core Nestle Theme based on bootstrap.'
+package: 'Nestle Themes'
 
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Header'
-  nestle_page_header: 'Nestle Page Header'
+  home_page_header: 'Home Page Header (Nestle)'
+  nestle_page_header: 'Nestle Page Header (Nestle)'
   jumbotron_section: 'Jumbotron'
-  userAccount: 'UserAccount'
-  Socialshare: 'Socialshare'
+  userAccount: 'UserAccount (Nestle)'
+  Socialshare: 'Socialshare (Nestle)'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
