@@ -1,0 +1,6 @@
+name: "Nestle Rule module"
+type: module
+core: 8.x
+package: "Nestle"
+description: "This is Nestle Rule module"
+
