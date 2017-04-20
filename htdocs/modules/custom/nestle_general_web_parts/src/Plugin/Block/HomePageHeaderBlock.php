@@ -28,6 +28,11 @@ class HomePageHeaderBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+	  
+	  
+	#$service = \Drupal::service('path.current');
+	#var_dump($service->getPath());
+	  
     return array(
 		'#type' => 'markup',
 		'#theme' => 'home_page_header_block',
