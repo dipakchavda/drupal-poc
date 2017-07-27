@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements HOOK_theme function
+ *
+ */
+function demo_module_theme() {
+	
+	return [
+		'second_page_template' => [
+			'template' => 'second-page-template',
+			'variables' => [
+				'content' => NULL,
+				'myname' => NULL,
+			],
+		]
+	];
+	
+}

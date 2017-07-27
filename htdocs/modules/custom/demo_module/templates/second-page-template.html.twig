@@ -1,0 +1,14 @@
+This is my second page.
+<h1>{{ myname }}</h1>
+
+<div>
+	<ul>
+		{% for key, value in content %}
+			{% if value.Gender == 'F' %}
+				<li><strong style="background-color: red; color: white;">{{ value.name }}</strong></li>
+			{% else %}
+				<li><strong style="background-color: blue; color: white;">{{ value.name }}</strong></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</div>

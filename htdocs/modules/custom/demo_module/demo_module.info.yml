@@ -1,0 +1,6 @@
+name: Demo Module
+type: module
+description: 'Demo Module for Drupal'
+package: Nestle
+core: 8.x
+version: '8.x-1.0'

@@ -4,14 +4,3 @@
 nestle_contactlab_rules.action.context_values.*:
   type: ignore
   label: Context values
-
-nestle_contactlab_rules.action.context_values.after_create_new_user_action:
-  type: mapping
-  label: Message action context values
-  mapping:
-    message:
-      type: text
-    type:
-      type: string
-    repeat:
-      type: boolean

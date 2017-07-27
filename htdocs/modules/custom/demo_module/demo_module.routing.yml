@@ -1,0 +1,12 @@
+demo_module.load_page:
+  path: '/sujaya-page'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\DemoModuleController::loadPage'
+  requirements:
+    _permission: 'load demo module page'
+demo_module.second_page:
+  path: '/second-page'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\DemoModuleController::secondPage'
+  requirements:
+    _permission: 'load demo module page'
