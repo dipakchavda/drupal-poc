@@ -1,6 +1,0 @@
-# Per default the schema of arbitrary context values of an action cannot be
-# typed. Actions that need translatability or other features of the config
-# system must specify their context value schema explicitly, see examples below.
-nestle_contactlab_rules.action.context_values.*:
-  type: ignore
-  label: Context values
