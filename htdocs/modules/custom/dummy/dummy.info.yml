@@ -1,0 +1,8 @@
+name: Dummy
+type: module
+description: Dummy Module
+core: 8.x
+package: Custom
+dependencies:
+  - node
+  - context

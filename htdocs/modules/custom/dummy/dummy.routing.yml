@@ -1,0 +1,34 @@
+dummy.index_controller_getData:
+  path: '/dummy/index'
+  options:
+    _auth: [ 'basic_auth' ]
+  defaults:
+    _controller: '\Drupal\dummy\Controller\IndexController::getData'
+    _title: 'getData'
+  methods:  [GET, POST]
+  requirements:
+    _permission: 'access content'
+dummy.index_controller_create:
+  path: '/dummy/index/create'
+  defaults:
+    _controller: '\Drupal\dummy\Controller\IndexController::createData'
+    _title: 'Create Data'
+  methods:  [POST]
+  requirements:
+    _permission: 'access content'
+dummy.index_controller_update:
+  path: '/dummy/index/update'
+  defaults:
+    _controller: '\Drupal\dummy\Controller\IndexController::updateData'
+    _title: 'Update Data'
+  methods:  [PUT]
+  requirements:
+    _permission: 'access content'
+dummy.index_controller_delete:
+  path: '/dummy/index/delete'
+  defaults:
+    _controller: '\Drupal\dummy\Controller\IndexController::deleteData'
+    _title: 'Delete Data'
+  methods:  [DELETE]
+  requirements:
+    _permission: 'access content'
