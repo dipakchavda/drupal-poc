@@ -1,0 +1,7 @@
+name: datamigration
+type: module
+description: Data Migration
+core: 8.x
+package: Custom
+dependencies:
+  - node

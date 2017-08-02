@@ -1,0 +1,14 @@
+{
+  "name": "drupal/datamigration",
+  "type": "drupal-module",
+  "description": "Data Migration",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/datamigration",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/datamigration",
+    "source": "http://cgit.drupalcode.org/datamigration"
+  },
+  "require": { }
+}

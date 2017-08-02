@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains datamigration.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function datamigration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the datamigration module.
+    case 'help.page.datamigration':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Data Migration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function datamigration_theme() {
+  return [
+    'datamigration' => [
+      'render element' => 'children',
+    ],
+  ];
+}

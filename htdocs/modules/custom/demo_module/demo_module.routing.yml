@@ -10,3 +10,10 @@ demo_module.second_page:
     _controller: '\Drupal\demo_module\Controller\DemoModuleController::secondPage'
   requirements:
     _permission: 'load demo module page'
+demo_module.phpexcel_csv_migrate_demo:
+  path: '/import-csv'
+  defaults:
+    _form: '\Drupal\demo_module\Form\CsvImportForm'
+    _title: 'CSV Import Demo'
+  requirements:
+    _permission: 'access content'
