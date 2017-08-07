@@ -39,13 +39,12 @@ class IndexController extends ControllerBase {
    */
   public function createData(Request $request) {
     
-    $response = ['status' => 200, 'statusText' => 'OK', 'response' => [], 'method' => $request->getMethod()];
+    $response = ['status' => 200, 'statusText' => 'OK', 'response' => [], 'method' => $request->getMethod(), 'request' => $request->headers->get('authorization'), 'hp' => base64_encode('nestleprod:nestleprod') ];
     
     if ("POST" === $request->getMethod()) {
       if ( 0 === strpos( $request->headers->get( 'content-type' ), 'application/json' ) ) {
         $data = json_decode( $request->getContent(), TRUE );
         $response['response'] = $data;
-        $request->request->replace( is_array( $data ) ? $data : [] );
       }
     }
     else {
@@ -67,7 +66,6 @@ class IndexController extends ControllerBase {
       if ( 0 === strpos( $request->headers->get( 'content-type' ), 'application/json' ) ) {
         $data = json_decode( $request->getContent(), TRUE );
         $response['response'] = $data;
-        $request->request->replace( is_array( $data ) ? $data : [] );
       }
     }
     else {
